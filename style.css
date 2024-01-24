@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* to define the colors  */ 
+:root {
+    --white: hsl(0, 0%,100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+
+}
+
+
+*{
+  padding : 0;
+  margin : 0; 
+  box-sizing: border-box;
+}
+
+/* for general things */
+body {
+  background-color : var(--light-gray); 
+  font-family: "Outfit",sans-serif;    /* sans serif for : simple font */
+  /* how to center : */ 
+  display: flex;                
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 1px); /* to make it stable for phone users */ 
+  margin: 16px ; /*distance from all other*/
+  margin-top: center;
+  /*padding : to set how far the items will be from each other */ 
+  flex-direction: column;
+ 
+
+
+}
+
+/* class */
+.container {
+  background-color: var(--white); 
+  border-radius: 16px ;   /* 1rem = 16px*/
+  box-shadow: 5px 5px 5px rgba(0, 0, 0.030, 0.030);
+  padding: 16px; 
+  margin-bottom: 21px;
+
+}
+
+.container img {
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.container h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-align: center;
+    color : var(--dark-blue);
+
+}
+
+.container p {
+
+    font-size: 1rem;
+    text-align: center;
+    color: var(--Grayish-blue); 
+    margin-bottom: 20px;
+    margin-top: 10px;
+    
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width:500px){
+    .container {
+        width : 300px ; 
+    }
+
+
+img {
+   max-width: 100%;
+}
