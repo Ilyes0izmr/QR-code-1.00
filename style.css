@@ -74,10 +74,11 @@ body {
 
 @media (min-width:500px){
     .container {
-        width : 300px ; 
+      width : 300px ; 
     }
+  }
 
 
 img {
-   max-width: 100%;
-}
+   max-width: 100% ;  
+  }
